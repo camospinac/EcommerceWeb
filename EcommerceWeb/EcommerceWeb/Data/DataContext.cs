@@ -13,6 +13,7 @@ namespace EcommerceWeb.Data
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Country>().HasIndex(c => c.Name).IsUnique(); 
+
         }
     }
     
