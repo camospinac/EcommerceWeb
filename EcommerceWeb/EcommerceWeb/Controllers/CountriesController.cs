@@ -52,7 +52,7 @@ namespace EcommerceWeb.Controllers
         // POST: Countries/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Country country)
+        public async Task<IActionResult> Create(Category country)
         {
             if (ModelState.IsValid)
             {
@@ -99,11 +99,9 @@ namespace EcommerceWeb.Controllers
         }
 
         // POST: Countries/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Country country)
+        public async Task<IActionResult> Edit(int id, Category country)
         {
             if (id != country.Id)
             {

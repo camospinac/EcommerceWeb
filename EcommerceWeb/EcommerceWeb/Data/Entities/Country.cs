@@ -2,7 +2,7 @@
 
 namespace EcommerceWeb.Data.Entities
 {
-    public class Country
+    public class Category
     {
         public int Id { get; set; }
         [Display(Name = "País")]
